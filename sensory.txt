@@ -1,0 +1,60 @@
+{prirazeni zobrazovaneho typu pristroje do promenne pro zvoleni charakteristiky}
+  {typ pristroje cteny ze souboru je ten kratsi}
+  {takze po tomhle prirazeni bude jedno, jestli se typ pristroje cetl ze souboru, nebo z roll-down menu, protoze z toho roll-down menu se to priradi, aby to odpovidalo tomu ze souboru}
+  {vsechny nazvy instrumentu ale musi mit 10 znaku s tim, ze ty, kde nic neni, jsou mezery - na tech 10 znaku se to cte ze souboru}
+  if  (instrument = 'STS1 360s')              then instrument := 'STS1      ';
+  if  (instrument = 'STS2 120s 1gen')         then instrument := 'STS2      ';
+  if  (instrument = 'STS2 120s 2gen')         then instrument := 'STS2-2g   ';
+  if  (instrument = 'STS2 120s 3gen')         then instrument := 'STS2-3g   ';
+  if  (instrument = 'STS2.5 120s')            then instrument := 'STS25     ';
+  if  (instrument = 'RefTek 151 60s A')       then instrument := 'RT60A     ';
+  if  (instrument = 'RefTek 151 60s Bold')    then instrument := 'RT60Bold  ';
+  if  (instrument = 'RefTek 151 60s Bnew')    then instrument := 'RT60Bnew  ';
+  if  (instrument = 'RefTek 151B 120s')       then instrument := 'RT120     ';
+  if  (instrument = 'KS-2000 120s orig')      then instrument := 'KS2000    ';
+  if  (instrument = 'KS-2000 120s IRIS')      then instrument := 'KS2000-120';
+  if  (instrument = 'KS-2000 100s IRIS')      then instrument := 'KS2000-100';
+  if  (instrument = 'KS-2000 60s IRIS')       then instrument := 'KS2000-060';
+  if  (instrument = 'KS-2000 50s IRIS')       then instrument := 'KS2000-050';
+  if  (instrument = 'KS-2000 40s IRIS')       then instrument := 'KS2000-040';
+  if  (instrument = 'KS-2000 30s IRIS')       then instrument := 'KS2000-030';
+  if  (instrument = 'KS-36000')               then instrument := 'KS36000   ';
+  if  (instrument = 'KS-54000')               then instrument := 'KS54000   ';
+  if  (instrument = 'MBB-2 120s')             then instrument := 'MBB2      ';
+  if  (instrument = 'Kirnos SKD 30s')         then instrument := 'Kskd30    ';
+  if  (instrument = 'Trillium 240old 240s')   then instrument := 'T240old   ';
+  if  (instrument = 'Trillium 240new 240s')   then instrument := 'T240new   ';
+  if  (instrument = 'Trillium 120 P/PA 120s') then instrument := 'T120      ';
+  if  (instrument = 'Trillium 120 Q/QA 120s') then instrument := 'T120Q     ';
+  if  (instrument = 'Trillium 120 PH 120s')   then instrument := 'T120PH    ';
+  if  (instrument = 'Trillium 40s')           then instrument := 'T40       ';
+  if  (instrument = 'Trillium 40s 4+2')       then instrument := 'T40alter  ';
+  if  (instrument = 'Trillium Compact 120s')  then instrument := 'Tcom120   ';
+  if  (instrument = 'Trillium Compact 120s MANUAL')  then instrument := 'Tcom120man';
+  if  (instrument = 'Trillium Compact 20s')   then instrument := 'T20       ';
+  if  (instrument = 'Guralp CMG-3T 10s')      then instrument := 'G10       ';
+  if  (instrument = 'Guralp CMG-3T 20s')      then instrument := 'G20       ';
+  if  (instrument = 'Guralp CMG-40T 30s Standard') or
+      (instrument = 'Guralp CMG-3ESP 30s')         or
+      (instrument = 'Guralp CMG-3T 30s')           then instrument := 'G30       ';
+  if  (instrument = 'Guralp CMG-40T 30s Alternat') then instrument := 'G30alter  ';
+  if  (instrument = 'Guralp CMG-40T 30s Pascal')   then instrument := 'G30pascal ';
+  if  (instrument = 'Guralp CMG-40T 60s')     or
+      (instrument = 'Guralp CMG-3ESP 60s')    or
+      (instrument = 'Guralp CMG-3ESPc 60s')   or
+      (instrument = 'Guralp CMG-3T 60s')      then instrument := 'G60       ';
+  if  (instrument = 'Guralp CMG-3ESP 90s')    then instrument := 'G90       ';
+  if  (instrument = 'Guralp CMG-3ESP 100s')   or
+      (instrument = 'Guralp CMG-3T 100s')     or
+      (instrument = 'Guralp CMG-1T 100s')     then instrument := 'G100      ';
+  if  (instrument = 'Guralp CMG-3ESP 120s')   or
+      (instrument = 'Guralp CMG-3T 120s')     or
+      (instrument = 'Guralp CMG-1T 120s')     then instrument := 'G120      ';
+  if  (instrument = 'Guralp CMG-3T 360s')     or
+      (instrument = 'Guralp CMG-1T 360s')     then instrument := 'G360      ';
+  if  (instrument = 'LE-3Dlite 1s')           then instrument := 'LE3D1     ';
+  if  (instrument = 'LE-3D 5s')               then instrument := 'LE3D5     ';
+  if  (instrument = 'LE-3D 20s')              then instrument := 'LE3D20    ';
+  if  (instrument = 'VE-53')                  then instrument := 'VE53      ';
+  if  (instrument = 'L-22 3D')                then instrument := 'L22       ';
+  if  (instrument = 'SMOL 10s')               then instrument := 'SMOL10    ';
